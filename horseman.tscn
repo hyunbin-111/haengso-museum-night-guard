@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://ce2y5tkjhawjp"]
+
+[ext_resource type="Script" uid="uid://blvldfovyy2w2" path="res://horseman.gd" id="1_1xlsc"]
+[ext_resource type="Texture2D" uid="uid://ba40pg2x4kwb6" path="res://assets/Exhibits/horseman/splitanimage-r1-c1.png" id="2_0a13l"]
+[ext_resource type="Texture2D" uid="uid://ncsdf2lyy1pb" path="res://assets/Exhibits/horseman/splitanimage-r1-c2.png" id="3_x1623"]
+[ext_resource type="Texture2D" uid="uid://d0jc83uy8mesp" path="res://assets/Exhibits/horseman/splitanimage-r1-c3.png" id="4_uqo0c"]
+[ext_resource type="Texture2D" uid="uid://d0hui8hvjj1yo" path="res://assets/Exhibits/horseman/splitanimage-r1-c4.png" id="5_4x8ld"]
+[ext_resource type="Texture2D" uid="uid://mgbbaiqycdm4" path="res://assets/Exhibits/horseman/splitanimage-r1-c5.png" id="6_y7r16"]
+[ext_resource type="Texture2D" uid="uid://0aj7cp181u6c" path="res://assets/Exhibits/horseman/splitanimage-r1-c6.png" id="7_u51e3"]
+[ext_resource type="Texture2D" uid="uid://bwqscxsx5j80t" path="res://assets/Exhibits/horseman/splitanimage-r3-c1.png" id="8_385o0"]
+[ext_resource type="Texture2D" uid="uid://bab5s767gdj3i" path="res://assets/Exhibits/horseman/splitanimage-r3-c2.png" id="9_e2wh8"]
+[ext_resource type="Texture2D" uid="uid://cnhqvk4fo2v06" path="res://assets/Exhibits/horseman/splitanimage-r3-c3.png" id="10_usxpf"]
+[ext_resource type="Texture2D" uid="uid://btgihiv3r64vb" path="res://assets/Exhibits/horseman/splitanimage-r3-c4.png" id="11_0ftwy"]
+[ext_resource type="Texture2D" uid="uid://cw3l761ncjkmv" path="res://assets/Exhibits/horseman/splitanimage-r3-c5.png" id="12_5i3eg"]
+[ext_resource type="Texture2D" uid="uid://b56y6bg08tnvy" path="res://assets/Exhibits/horseman/splitanimage-r3-c6.png" id="13_f2aoa"]
+[ext_resource type="Texture2D" uid="uid://demubviugard4" path="res://assets/Exhibits/horseman/splitanimage-r4-c1.png" id="14_275d3"]
+[ext_resource type="Texture2D" uid="uid://2s2ry2h7ht2c" path="res://assets/Exhibits/horseman/splitanimage-r4-c2.png" id="15_wfwuw"]
+[ext_resource type="Texture2D" uid="uid://30cylqg1thdy" path="res://assets/Exhibits/horseman/splitanimage-r4-c3.png" id="16_gk8jt"]
+[ext_resource type="Texture2D" uid="uid://dydsi6agxvf" path="res://assets/Exhibits/horseman/splitanimage-r4-c4.png" id="17_l508i"]
+[ext_resource type="Texture2D" uid="uid://cy254feg7gu1k" path="res://assets/Exhibits/horseman/splitanimage-r4-c5.png" id="18_axt24"]
+[ext_resource type="Texture2D" uid="uid://dd14xqhy6taoj" path="res://assets/Exhibits/horseman/splitanimage-r4-c6.png" id="19_sk2kn"]
+[ext_resource type="Texture2D" uid="uid://cfb54vdjcm5jr" path="res://assets/Exhibits/horseman/splitanimage-r2-c1.png" id="20_cx3eo"]
+[ext_resource type="Texture2D" uid="uid://bhd8smpt8seiw" path="res://assets/Exhibits/horseman/splitanimage-r2-c2.png" id="21_p0o8q"]
+[ext_resource type="Texture2D" uid="uid://prk3iq6qlx0p" path="res://assets/Exhibits/horseman/splitanimage-r2-c3.png" id="22_xynoi"]
+[ext_resource type="Texture2D" uid="uid://bdb5fcu0mv0x2" path="res://assets/Exhibits/horseman/splitanimage-r2-c4.png" id="23_ga7aj"]
+[ext_resource type="Texture2D" uid="uid://b83exco20gdcm" path="res://assets/Exhibits/horseman/splitanimage-r2-c5.png" id="24_8leev"]
+[ext_resource type="Texture2D" uid="uid://8lb7xy8he2ts" path="res://assets/Exhibits/horseman/splitanimage-r2-c6.png" id="25_43ioq"]
+[ext_resource type="AudioStream" uid="uid://d00ge2t7kky57" path="res://assets/audio/horsmanrun.mp3" id="26_0a13l"]
+[ext_resource type="AudioStream" uid="uid://bmoayxoanve1f" path="res://assets/audio/catch.mp3" id="27_x1623"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8stlo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0a13l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x1623")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uqo0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4x8ld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y7r16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u51e3")
+}],
+"loop": true,
+"name": &"down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_385o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e2wh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_usxpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0ftwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5i3eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_f2aoa")
+}],
+"loop": true,
+"name": &"left",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_275d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wfwuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gk8jt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l508i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_axt24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_sk2kn")
+}],
+"loop": true,
+"name": &"right",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_cx3eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_p0o8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xynoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ga7aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8leev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_43ioq")
+}],
+"loop": true,
+"name": &"up",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1qh0"]
+size = Vector2(120, 106)
+
+[node name="horseman" type="CharacterBody2D" unique_id=1192170248]
+script = ExtResource("1_1xlsc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1766604739]
+sprite_frames = SubResource("SpriteFrames_8stlo")
+animation = &"down"
+frame_progress = 0.8579748
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1460397685]
+position = Vector2(0, 24)
+shape = SubResource("RectangleShape2D_b1qh0")
+
+[node name="RunSound" type="AudioStreamPlayer2D" parent="." unique_id=1619065669]
+stream = ExtResource("26_0a13l")
+parameters/looping = true
+
+[node name="DisappearSound" type="AudioStreamPlayer2D" parent="." unique_id=1863468908]
+stream = ExtResource("27_x1623")

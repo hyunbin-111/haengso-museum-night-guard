@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ewphn1eddrko"]
+
+[ext_resource type="Script" uid="uid://bggi3e5feb8t" path="res://exhibit_manager.gd" id="1_6s2xe"]
+[ext_resource type="PackedScene" uid="uid://4qfeg3vh1sse" path="res://bird.tscn" id="1_cdif4"]
+[ext_resource type="PackedScene" uid="uid://bvhcfjmbjnpwl" path="res://bell_exhibit.tscn" id="2_6s2xe"]
+[ext_resource type="PackedScene" uid="uid://j0xcbqd61key" path="res://handaxe.tscn" id="4_d085g"]
+[ext_resource type="PackedScene" uid="uid://ce2y5tkjhawjp" path="res://horseman.tscn" id="5_d5664"]
+[ext_resource type="AudioStream" uid="uid://cn7djs7sakny5" path="res://assets/audio/handaxespawn.mp3" id="6_ycp8j"]
+[ext_resource type="AudioStream" uid="uid://3uhmtf6gmw3w" path="res://assets/audio/horseneigh.mp3" id="7_j227c"]
+
+[node name="ExhibitManager" type="Node" unique_id=503072684 groups=["Bird", "ExhibitManager"]]
+script = ExtResource("1_6s2xe")
+bird_scene = ExtResource("1_cdif4")
+handaxe_scene = ExtResource("4_d085g")
+horseman_scene = ExtResource("5_d5664")
+horseman_spawn_positions = Array[Vector2]([Vector2(-480, -700)])
+
+[node name="Exhibits" type="Node2D" parent="." unique_id=1069967973]
+
+[node name="Bird" parent="Exhibits" unique_id=11124833 instance=ExtResource("1_cdif4")]
+position = Vector2(20.999998, -585)
+
+[node name="BellExhibit" parent="Exhibits" unique_id=1321355744 instance=ExtResource("2_6s2xe")]
+scale = Vector2(0.8, 0.8)
+
+[node name="HandaxeSpawnSound" type="AudioStreamPlayer2D" parent="." unique_id=1037106963]
+stream = ExtResource("6_ycp8j")
+
+[node name="HorsemanSpawnSound" type="AudioStreamPlayer2D" parent="." unique_id=806787082]
+stream = ExtResource("7_j227c")

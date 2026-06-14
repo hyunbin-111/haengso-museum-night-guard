@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bvhcfjmbjnpwl"]
+
+[ext_resource type="Script" uid="uid://cupe6q44noet0" path="res://bell_exhibit.gd" id="1_tk027"]
+[ext_resource type="Texture2D" uid="uid://beb78m13thmi2" path="res://assets/Exhibits/25f432c2-e676-4450-8e5b-58320868160c (1).png" id="2_ah1r4"]
+[ext_resource type="Texture2D" uid="uid://cggswvv67pk84" path="res://assets/Exhibits/63bbcb40-df4f-4c59-92eb-b48332d46929.png" id="2_p05rf"]
+[ext_resource type="AudioStream" uid="uid://dipnlcwokgdq8" path="res://assets/audio/bell.mp3" id="4_ah1r4"]
+[ext_resource type="AudioStream" uid="uid://7s6bojwo0tcw" path="res://assets/audio/windup.mp3" id="5_djb12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p05rf"]
+size = Vector2(169, 179)
+
+[node name="BellExhibit" type="Node2D" unique_id=1321355744]
+script = ExtResource("1_tk027")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2100127982]
+z_index = 15
+texture = ExtResource("2_ah1r4")
+
+[node name="SoundEffect" type="Node2D" parent="." unique_id=1837245407]
+position = Vector2(26, 80)
+
+[node name="Sprite2D" type="Sprite2D" parent="SoundEffect" unique_id=792446285]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_p05rf")
+
+[node name="Label" type="Label" parent="." unique_id=817227699]
+z_index = 20
+offset_left = -24.0
+offset_top = -22.0
+offset_right = 40.0
+offset_bottom = 16.0
+
+[node name="InteractArea" type="Area2D" parent="." unique_id=191565175]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea" unique_id=1439660923]
+position = Vector2(30.5, 129.5)
+shape = SubResource("RectangleShape2D_p05rf")
+
+[node name="BellRingSound" type="AudioStreamPlayer2D" parent="." unique_id=508124800]
+stream = ExtResource("4_ah1r4")
+
+[node name="BellResetSound" type="AudioStreamPlayer2D" parent="." unique_id=638193787]
+stream = ExtResource("5_djb12")
+volume_db = 10.0
+
+[connection signal="body_entered" from="InteractArea" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="InteractArea" to="." method="_on_interact_area_body_exited"]

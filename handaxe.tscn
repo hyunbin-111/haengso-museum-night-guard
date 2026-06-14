@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://j0xcbqd61key"]
+
+[ext_resource type="Script" uid="uid://bsv5eidcc2rg0" path="res://handaxe.gd" id="1_0da5j"]
+[ext_resource type="Texture2D" uid="uid://bxvuj2w6g3k30" path="res://assets/Exhibits/5f8d8284-fa1c-4957-b479-cf1e3d4f970a.png" id="2_rl3u7"]
+[ext_resource type="AudioStream" uid="uid://xrjf63lthjp8" path="res://assets/audio/handaxe.mp3" id="3_rl3u7"]
+[ext_resource type="AudioStream" uid="uid://bmoayxoanve1f" path="res://assets/audio/catch.mp3" id="4_umu3c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0da5j"]
+bg_color = Color(0.21568628, 0.7019608, 0.28627452, 1)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0da5j"]
+radius = 48.0
+height = 186.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rl3u7"]
+radius = 48.0
+height = 188.0
+
+[node name="Handaxe" type="CharacterBody2D" unique_id=542089211]
+script = ExtResource("1_0da5j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1720478420]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_rl3u7")
+
+[node name="LightProgressBar" type="ProgressBar" parent="." unique_id=1381403272]
+offset_left = -61.0
+offset_top = -158.0
+offset_right = 62.0
+offset_bottom = -100.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_0da5j")
+
+[node name="LightDetectArea" type="Area2D" parent="." unique_id=149681179]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LightDetectArea" unique_id=840152620]
+shape = SubResource("CapsuleShape2D_0da5j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1909677744]
+shape = SubResource("CapsuleShape2D_rl3u7")
+
+[node name="BounceSound" type="AudioStreamPlayer2D" parent="." unique_id=1474282189]
+stream = ExtResource("3_rl3u7")
+volume_db = -10.0
+
+[node name="RemoveSound" type="AudioStreamPlayer2D" parent="." unique_id=1800772471]
+stream = ExtResource("4_umu3c")

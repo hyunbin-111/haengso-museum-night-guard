@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://cvhnlgscu03x5"]
+
+[ext_resource type="Script" uid="uid://bmtf5npyhretc" path="res://start_menu.gd" id="1_v2mkm"]
+[ext_resource type="Texture2D" uid="uid://c87j1qm3u837j" path="res://assets/StratMenu/d8e8eef0-7f56-49f3-85a3-aec072f5ecaa.png" id="2_ppfnh"]
+[ext_resource type="Texture2D" uid="uid://dtnumwdyricol" path="res://assets/StratMenu/1e582924-57b0-4f51-b23d-7f076a92d632.png" id="2_v2mkm"]
+[ext_resource type="Texture2D" uid="uid://bo1uwmm488slc" path="res://assets/StratMenu/d6e05416-7c1a-42e7-98ad-a512978642fa.png" id="3_ctwoq"]
+[ext_resource type="Texture2D" uid="uid://b53r63w5ulakq" path="res://assets/StratMenu/canva-volume-icon-MAE7PBvHEQE.png" id="5_ctwoq"]
+[ext_resource type="FontFile" uid="uid://cmlodeed5k8fm" path="res://assets/Font/Pretendard-Medium.woff" id="5_ppfnh"]
+[ext_resource type="AudioStream" uid="uid://bssq7v2vmjlv3" path="res://assets/audio/bgm.mp3" id="7_7boi2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2mkm"]
+bg_color = Color(0, 0, 0, 0.78431374)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.43, 0.43, 0.43, 1)
+border_blend = true
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppfnh"]
+corner_radius_top_left = 2
+corner_radius_top_right = 12
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="StartMenu" type="Control" unique_id=1103447302]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v2mkm")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1403443962]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ppfnh")
+expand_mode = 1
+
+[node name="StartButton" type="TextureButton" parent="." unique_id=341141778]
+layout_mode = 0
+offset_left = 709.0
+offset_top = 784.0
+offset_right = 1216.0
+offset_bottom = 916.0
+texture_normal = ExtResource("2_v2mkm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=1494776931]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 925.0
+offset_right = 1175.0
+offset_bottom = 1042.0
+texture_normal = ExtResource("3_ctwoq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsPanel" type="Panel" parent="." unique_id=1889603761]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v2mkm")
+
+[node name="Label" type="Label" parent="SettingsPanel" unique_id=1489883304]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = -215.5
+offset_right = 189.5
+offset_bottom = 215.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_ppfnh")
+theme_override_font_sizes/font_size = 23
+text = "                        [조작법]
+
+                    WASD - 이동
+
+                    E - 상호작용
+
+                    F - 손전등
+
+                    우클릭 - 근무수칙
+
+
+               [전체 음량]
+"
+
+[node name="CloseButton" type="Button" parent="SettingsPanel" unique_id=135387220]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -28.0
+offset_bottom = 27.0
+grow_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ppfnh")
+text = "X"
+
+[node name="VolumeLabel" type="Label" parent="SettingsPanel" unique_id=1321403166]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 374.0
+offset_right = 320.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 23
+
+[node name="VolumeSlider" type="HSlider" parent="SettingsPanel" unique_id=845613931]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 398.0
+offset_right = 367.0
+offset_bottom = 476.0
+
+[node name="VolumeIcon" type="TextureRect" parent="SettingsPanel" unique_id=1697770395]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 417.0
+offset_right = 125.0
+offset_bottom = 455.0
+texture = ExtResource("5_ctwoq")
+expand_mode = 1
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="." unique_id=1757883774]
+stream = ExtResource("7_7boi2")
+volume_db = 24.0
+parameters/looping = true

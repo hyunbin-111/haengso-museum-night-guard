@@ -1,0 +1,706 @@
+[gd_scene format=3 uid="uid://1fer4mx2fyxf"]
+
+[ext_resource type="Script" uid="uid://bhfftc81xvdw0" path="res://control.gd" id="2_640wx"]
+[ext_resource type="FontFile" uid="uid://cmlodeed5k8fm" path="res://assets/Font/Pretendard-Medium.woff" id="2_tqq6i"]
+[ext_resource type="AudioStream" uid="uid://d0gu5fec84tak" path="res://assets/audio/typing.mp3" id="3_atjiy"]
+[ext_resource type="Script" uid="uid://dxjf3eengubdm" path="res://control_2.gd" id="4_ap7yk"]
+[ext_resource type="Texture2D" uid="uid://dwoxv4xy4dsut" path="res://assets/page_left/splitanimage-r1-c1.png" id="4_pw7dr"]
+[ext_resource type="Texture2D" uid="uid://cc6ox1qmd10iu" path="res://assets/page_left/splitanimage-r1-c2.png" id="5_ap7yk"]
+[ext_resource type="Texture2D" uid="uid://ckh7lb7r3m6tv" path="res://assets/page_left/splitanimage-r1-c3.png" id="6_5kc73"]
+[ext_resource type="Texture2D" uid="uid://wnehtrk3ajir" path="res://assets/page_left/splitanimage-r1-c4.png" id="7_bp16l"]
+[ext_resource type="Texture2D" uid="uid://6k25731qsotw" path="res://assets/page_left/splitanimage-r2-c1.png" id="8_5iihh"]
+[ext_resource type="Texture2D" uid="uid://swxxnxawfgcp" path="res://assets/page_left/splitanimage-r2-c2.png" id="9_rgb5v"]
+[ext_resource type="Texture2D" uid="uid://c1oheibr60vb8" path="res://assets/page_left/splitanimage-r2-c3.png" id="10_np8ax"]
+[ext_resource type="Texture2D" uid="uid://cc6tgefk42ugi" path="res://assets/page_left/splitanimage-r2-c4.png" id="11_8w6vd"]
+[ext_resource type="Texture2D" uid="uid://13fkjn33dmgc" path="res://assets/page_left/splitanimage-r3-c1.png" id="12_shnbk"]
+[ext_resource type="Texture2D" uid="uid://cmli2uxag4hd2" path="res://assets/page_left/splitanimage-r3-c2.png" id="13_o2hcl"]
+[ext_resource type="Texture2D" uid="uid://b5s0rbkvtk76k" path="res://assets/page_left/splitanimage-r3-c3.png" id="14_gh5fi"]
+[ext_resource type="Texture2D" uid="uid://b6f30vr5t2bis" path="res://assets/page_left/splitanimage-r3-c4.png" id="15_nx880"]
+[ext_resource type="Texture2D" uid="uid://bg3n6bqh8ykwv" path="res://assets/page_left/splitanimage-r4-c1.png" id="16_drihh"]
+[ext_resource type="Texture2D" uid="uid://c4idey8bugjb5" path="res://assets/page_left/splitanimage-r4-c2.png" id="17_d5hpo"]
+[ext_resource type="Texture2D" uid="uid://cditnej733lwt" path="res://assets/page_left/splitanimage-r4-c3.png" id="18_y8web"]
+[ext_resource type="Texture2D" uid="uid://cor416pvnjl2b" path="res://assets/page_right/splitanimage-r1-c1.png" id="20_tcfrd"]
+[ext_resource type="Texture2D" uid="uid://b1s0f4w6ebhf8" path="res://assets/page_right/splitanimage-r1-c2.png" id="21_qb75m"]
+[ext_resource type="Texture2D" uid="uid://cia4pebye7dhe" path="res://assets/page_right/splitanimage-r1-c3.png" id="22_x1wfm"]
+[ext_resource type="Texture2D" uid="uid://rom7qcyeuiv1" path="res://assets/page_right/splitanimage-r1-c4.png" id="23_kasu4"]
+[ext_resource type="Texture2D" uid="uid://m5iklv7rvbqi" path="res://assets/page_right/splitanimage-r2-c1.png" id="24_tqq6i"]
+[ext_resource type="Texture2D" uid="uid://brk4dom5f0cnj" path="res://assets/page_right/splitanimage-r2-c2.png" id="25_yucwx"]
+[ext_resource type="Texture2D" uid="uid://c7skapy5jjne8" path="res://assets/page_right/splitanimage-r2-c3.png" id="26_xeimn"]
+[ext_resource type="Texture2D" uid="uid://rbiincpnyoxa" path="res://assets/page_right/splitanimage-r2-c4.png" id="27_mp6wi"]
+[ext_resource type="Texture2D" uid="uid://c6d85teaiy0dc" path="res://assets/page_right/splitanimage-r3-c1.png" id="28_64hrl"]
+[ext_resource type="Texture2D" uid="uid://b8p20a0ajs7bw" path="res://assets/page_right/splitanimage-r3-c2.png" id="29_eweso"]
+[ext_resource type="Texture2D" uid="uid://d3j3frfavp5x4" path="res://assets/page_right/splitanimage-r3-c3.png" id="30_7m7ug"]
+[ext_resource type="Texture2D" uid="uid://b3ege2ratsbmh" path="res://assets/page_right/splitanimage-r3-c4.png" id="31_bn2fi"]
+[ext_resource type="Texture2D" uid="uid://brw8c13a7wysf" path="res://assets/page_right/splitanimage-r4-c1.png" id="32_atjiy"]
+[ext_resource type="Texture2D" uid="uid://cp35t7rohep1g" path="res://assets/page_right/splitanimage-r4-c2.png" id="33_tfn8a"]
+[ext_resource type="Texture2D" uid="uid://ciqth2elqkh5b" path="res://assets/page_right/splitanimage-r4-c3.png" id="34_ov28w"]
+[ext_resource type="FontFile" uid="uid://ba4pki85ix8nu" path="res://assets/Font/Pretendard-SemiBold.woff" id="34_yucwx"]
+[ext_resource type="AudioStream" uid="uid://c8jx7omfn2vk7" path="res://assets/audio/manualclick.mp3" id="35_7m7ug"]
+[ext_resource type="Script" uid="uid://bupoeuao1fwm3" path="res://time.gd" id="35_qb75m"]
+[ext_resource type="AudioStream" uid="uid://c686l84vq7iw8" path="res://assets/audio/manualpage.mp3" id="36_bn2fi"]
+[ext_resource type="Script" uid="uid://5ixmtmuntweo" path="res://game_over_screen.gd" id="36_x1wfm"]
+[ext_resource type="Texture2D" uid="uid://ts4q03ef2jfb" path="res://assets/Exhibits/bird/splitanimage-r1-c2.png" id="37_kasu4"]
+[ext_resource type="Script" uid="uid://ckvo4kfssnlep" path="res://bird_icon_ui.gd" id="37_tqq6i"]
+[ext_resource type="Script" uid="uid://ct78rm0gnuky7" path="res://flashlight.gd" id="39_yucwx"]
+[ext_resource type="Script" uid="uid://bylj818u1872r" path="res://game_clear_screen.gd" id="40_eweso"]
+[ext_resource type="AudioStream" uid="uid://cuuc6x6vn5471" path="res://assets/audio/gameover.mp3" id="40_ov28w"]
+[ext_resource type="Script" uid="uid://cxffew2fwvkh5" path="res://patrol_message_ui.gd" id="40_xeimn"]
+[ext_resource type="Script" uid="uid://chxdej1nwbq4b" path="res://patrol_progress_ui.gd" id="41_mp6wi"]
+[ext_resource type="Script" uid="uid://i8y3gd6stjcv" path="res://pause_menu.gd" id="42_64hrl"]
+[ext_resource type="AudioStream" uid="uid://byks1k7apwt6" path="res://assets/audio/gameclear.mp3" id="45_rm01p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kasu4"]
+bg_color = Color(0, 0, 0, 0.5882353)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.52, 0.52, 0.52, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1xsix"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pw7dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ap7yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5kc73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bp16l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5iihh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rgb5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_np8ax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8w6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_shnbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o2hcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gh5fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nx880")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_drihh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_d5hpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_y8web")
+}],
+"loop": false,
+"name": &"pages_left",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_tcfrd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qb75m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_x1wfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_kasu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_tqq6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yucwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xeimn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mp6wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_64hrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_eweso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7m7ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bn2fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_atjiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_tfn8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ov28w")
+}],
+"loop": false,
+"name": &"pages_right",
+"speed": 15.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7m7ug"]
+bg_color = Color(0.28, 0.28, 0.28, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bn2fi"]
+bg_color = Color(0.2819191, 0.28191918, 0.281919, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eweso"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_atjiy"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfn8a"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp6wi"]
+bg_color = Color(0.47866166, 0.47866172, 0.47866166, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64hrl"]
+bg_color = Color(0.47843137, 0.47843137, 0.47843137, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="HUD" type="CanvasLayer" unique_id=1696038280]
+
+[node name="DialogueUI" type="Control" parent="." unique_id=775417060]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 870.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_640wx")
+metadata/_edit_group_ = true
+
+[node name="Panel" type="Panel" parent="DialogueUI" unique_id=404344841]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -44.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kasu4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueUI/Panel" unique_id=1168938966]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 55.0
+offset_top = -38.5
+offset_right = 1235.0
+offset_bottom = 38.5
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("2_tqq6i")
+theme_override_font_sizes/normal_font_size = 46
+scroll_active = false
+
+[node name="NextIcon" type="Label" parent="DialogueUI/Panel" unique_id=1503466961]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -98.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 44
+text = "▼"
+
+[node name="TypingSound" type="AudioStreamPlayer" parent="DialogueUI" unique_id=1506572050]
+stream = ExtResource("3_atjiy")
+parameters/looping = true
+
+[node name="Manual" type="Control" parent="." unique_id=1405606295]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_ap7yk")
+
+[node name="pages" type="AnimatedSprite2D" parent="Manual" unique_id=1214840779]
+position = Vector2(963, 350)
+scale = Vector2(5.9044113, 4.422794)
+sprite_frames = SubResource("SpriteFrames_1xsix")
+animation = &"pages_left"
+frame = 14
+frame_progress = 1.0
+
+[node name="left_Button" type="Button" parent="Manual" unique_id=1712963281]
+layout_mode = 0
+offset_left = 306.0
+offset_top = 756.0
+offset_right = 396.0
+offset_bottom = 832.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_7m7ug")
+text = "↩"
+
+[node name="right_Button" type="Button" parent="Manual" unique_id=1299732385]
+layout_mode = 0
+offset_left = 1512.0
+offset_top = 749.0
+offset_right = 1595.0
+offset_bottom = 821.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bn2fi")
+text = "↪"
+
+[node name="Label" type="RichTextLabel" parent="Manual" unique_id=1567654750]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39400002
+anchor_top = 0.42800003
+anchor_right = 0.39400002
+anchor_bottom = 0.42800003
+offset_left = -418.48004
+offset_top = -281.24002
+offset_right = 151.51996
+offset_bottom = 287.75998
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("34_yucwx")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Manual" unique_id=68718021]
+layout_mode = 0
+offset_left = 1015.0
+offset_top = 176.0
+offset_right = 1568.0
+offset_bottom = 773.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("34_yucwx")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+
+[node name="ManualToggleSound" type="AudioStreamPlayer" parent="Manual" unique_id=1473887662]
+stream = ExtResource("35_7m7ug")
+volume_db = 5.0
+
+[node name="PageFlipSound" type="AudioStreamPlayer" parent="Manual" unique_id=1537798540]
+stream = ExtResource("36_bn2fi")
+
+[node name="Time" type="Control" parent="." unique_id=1680055817]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 95.0
+offset_bottom = 58.0
+script = ExtResource("35_qb75m")
+
+[node name="Label" type="Label" parent="Time" unique_id=174512492]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 68.0
+offset_bottom = 46.0
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 44
+
+[node name="GameOverScreen" type="Control" parent="." unique_id=1442889138]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("36_x1wfm")
+
+[node name="ReasonLabel" type="Label" parent="GameOverScreen" unique_id=1628870795]
+z_index = 15
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="GameOverScreen" unique_id=1505638074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.47058824)
+
+[node name="RestartButton" type="Button" parent="GameOverScreen" unique_id=1282467912]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = 107.0
+offset_right = -40.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_eweso")
+text = "게임 재시작"
+
+[node name="StartMenuButton" type="Button" parent="GameOverScreen" unique_id=461395382]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 41.0
+offset_top = 107.0
+offset_right = 203.0
+offset_bottom = 178.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_eweso")
+text = "시작 메뉴"
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="GameOverScreen" unique_id=161120696]
+stream = ExtResource("40_ov28w")
+volume_db = 10.0
+
+[node name="BirdIconUI" type="Control" parent="." unique_id=265636871]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 123.0
+offset_bottom = 62.0
+script = ExtResource("37_tqq6i")
+
+[node name="TextureRect" type="TextureRect" parent="BirdIconUI" unique_id=344593639]
+layout_mode = 0
+offset_left = 133.0
+offset_top = -8.0
+offset_right = 241.0
+offset_bottom = 89.0
+texture = ExtResource("37_kasu4")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="BirdIconUI" unique_id=1045704789]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 10.0
+offset_right = 290.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 40
+
+[node name="Flashlight" type="Control" parent="." unique_id=1462350349]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 2.0
+offset_top = 64.0
+offset_right = 42.0
+offset_bottom = 104.0
+script = ExtResource("39_yucwx")
+
+[node name="ProgressBar" type="ProgressBar" parent="Flashlight" unique_id=758742475]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 13.0
+offset_right = 133.0
+offset_bottom = 40.0
+
+[node name="GameClearScreen" type="Control" parent="." unique_id=713119740]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("40_eweso")
+
+[node name="ClearLabel" type="Label" parent="GameClearScreen" unique_id=670235309]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -202.0
+offset_right = 20.0
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="GameClearScreen" unique_id=2053476146]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -291.0
+offset_top = 85.0
+offset_right = -84.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_atjiy")
+text = "게임 재시작
+"
+
+[node name="StartMenuButton" type="Button" parent="GameClearScreen" unique_id=954261240]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 77.0
+offset_top = 85.0
+offset_right = 294.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_tfn8a")
+text = "시작 메뉴"
+
+[node name="GameClearSound" type="AudioStreamPlayer" parent="GameClearScreen" unique_id=670789270]
+stream = ExtResource("45_rm01p")
+
+[node name="PatrolMessageUI" type="Control" parent="." unique_id=1190349473]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -285.0
+offset_right = 96.0
+offset_bottom = -247.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("40_xeimn")
+
+[node name="Panel" type="Panel" parent="PatrolMessageUI" unique_id=1120171953]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -165.0
+offset_top = -132.0
+offset_right = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PatrolMessageUI/Panel" unique_id=1339765347]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 29
+
+[node name="PatrolProgressUI" type="Control" parent="." unique_id=2003278923]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("41_mp6wi")
+
+[node name="Label" type="Label" parent="PatrolProgressUI" unique_id=1070739058]
+layout_mode = 0
+offset_left = 342.0
+offset_right = 501.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 32
+
+[node name="PauseMenu" type="Control" parent="." unique_id=434358693]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("42_64hrl")
+
+[node name="Panel" type="Panel" parent="PauseMenu" unique_id=138020538]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.0
+offset_top = -268.0
+offset_right = 250.0
+offset_bottom = 170.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/Panel" unique_id=375817402]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 77.0
+offset_right = 346.0
+offset_bottom = 132.0
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp6wi")
+text = "게임 재개"
+
+[node name="QuitButton" type="Button" parent="PauseMenu/Panel" unique_id=332873433]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 163.0
+offset_right = 348.0
+offset_bottom = 217.0
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_64hrl")
+text = "게임 종료"
+
+[node name="ControlsLabel" type="Label" parent="PauseMenu" unique_id=1527420735]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -30.0
+offset_right = 98.0
+offset_bottom = 137.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("34_yucwx")
+theme_override_font_sizes/font_size = 19
+text = "                [조작법]
+           WASD - 이동
+           E - 상호작용
+           F - 손전등
+          우클릭 - 근무수칙"
+
+[connection signal="gui_input" from="DialogueUI" to="DialogueUI" method="_on_gui_input"]
+[connection signal="animation_finished" from="Manual/pages" to="Manual" method="_on_pages_animation_finished"]
+[connection signal="pressed" from="Manual/left_Button" to="Manual" method="_on_left_button_pressed"]
+[connection signal="pressed" from="Manual/right_Button" to="Manual" method="_on_right_button_pressed"]

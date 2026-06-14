@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://4qfeg3vh1sse"]
+
+[ext_resource type="Texture2D" uid="uid://sja18tk864a5" path="res://assets/Exhibits/bird/splitanimage-r1-c1.png" id="1_bn747"]
+[ext_resource type="Script" uid="uid://b5n24tx5s2sus" path="res://bird.gd" id="1_dd6dp"]
+[ext_resource type="Texture2D" uid="uid://ts4q03ef2jfb" path="res://assets/Exhibits/bird/splitanimage-r1-c2.png" id="2_dd6dp"]
+[ext_resource type="Texture2D" uid="uid://d0iiv7xkll0xq" path="res://assets/Exhibits/bird/splitanimage-r1-c3.png" id="3_vox6r"]
+[ext_resource type="Texture2D" uid="uid://b6yp75qody5lo" path="res://assets/Exhibits/bird/splitanimage-r1-c4.png" id="4_a7h38"]
+[ext_resource type="Texture2D" uid="uid://ddwrcd1fjqkql" path="res://assets/Exhibits/bird/splitanimage-r4-c1.png" id="5_81qbw"]
+[ext_resource type="Texture2D" uid="uid://d4igdh164jl31" path="res://assets/Exhibits/bird/splitanimage-r4-c2.png" id="6_qnuwx"]
+[ext_resource type="Texture2D" uid="uid://dkbqe1lxlvjcm" path="res://assets/Exhibits/bird/splitanimage-r4-c3.png" id="7_a6rnj"]
+[ext_resource type="Texture2D" uid="uid://2awkrb4rhb61" path="res://assets/Exhibits/bird/splitanimage-r4-c4.png" id="8_06prv"]
+[ext_resource type="Texture2D" uid="uid://dlo6m5nhrwe4t" path="res://assets/Exhibits/bird/splitanimage-r3-c1.png" id="9_ixa13"]
+[ext_resource type="Texture2D" uid="uid://3qmf6w137iok" path="res://assets/Exhibits/bird/splitanimage-r3-c2.png" id="10_gpy27"]
+[ext_resource type="Texture2D" uid="uid://bg8u5whr1sose" path="res://assets/Exhibits/bird/splitanimage-r3-c3.png" id="11_s7npx"]
+[ext_resource type="Texture2D" uid="uid://d3rkb0hybqrki" path="res://assets/Exhibits/bird/splitanimage-r3-c4.png" id="12_tsvpm"]
+[ext_resource type="Texture2D" uid="uid://cap61xewpw0an" path="res://assets/Exhibits/bird/splitanimage-r2-c1.png" id="13_bvnmh"]
+[ext_resource type="Texture2D" uid="uid://cl4be3d6cptro" path="res://assets/Exhibits/bird/splitanimage-r2-c2.png" id="14_sf7xk"]
+[ext_resource type="Texture2D" uid="uid://lm527m6ano3" path="res://assets/Exhibits/bird/splitanimage-r2-c3.png" id="15_n4lpy"]
+[ext_resource type="Texture2D" uid="uid://c1jfpc206uqje" path="res://assets/Exhibits/bird/splitanimage-r2-c4.png" id="16_6rmfl"]
+[ext_resource type="AudioStream" uid="uid://bmoayxoanve1f" path="res://assets/audio/catch.mp3" id="18_vox6r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n6uhb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bn747")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dd6dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vox6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a7h38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vox6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dd6dp")
+}],
+"loop": true,
+"name": &"down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_81qbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qnuwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6rnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_06prv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6rnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qnuwx")
+}],
+"loop": true,
+"name": &"left",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ixa13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gpy27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s7npx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tsvpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s7npx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gpy27")
+}],
+"loop": true,
+"name": &"right",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_bvnmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sf7xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_n4lpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6rmfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_n4lpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sf7xk")
+}],
+"loop": true,
+"name": &"up",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ngel2"]
+size = Vector2(130.00003, 115.00003)
+
+[node name="Bird" type="CharacterBody2D" unique_id=11124833 groups=["Bird", "ExhibitManager"]]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_dd6dp")
+move_speed = 200.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1655071666]
+sprite_frames = SubResource("SpriteFrames_n6uhb")
+animation = &"down"
+frame = 4
+frame_progress = 0.81778324
+
+[node name="WanderTimer" type="Timer" parent="." unique_id=395798109]
+
+[node name="InteractArea" type="Area2D" parent="." unique_id=1668916470]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea" unique_id=2002667014]
+position = Vector2(6.854533e-06, 27.5)
+scale = Vector2(0.99999946, 0.99999946)
+shape = SubResource("RectangleShape2D_ngel2")
+
+[node name="Label" type="Label" parent="." unique_id=1713381739]
+offset_left = -325.0
+offset_top = -275.0
+offset_right = 324.99994
+offset_bottom = -85.00003
+theme_override_font_sizes/font_size = 47
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CatchSound" type="AudioStreamPlayer2D" parent="." unique_id=160569375]
+stream = ExtResource("18_vox6r")
+
+[connection signal="body_entered" from="InteractArea" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="InteractArea" to="." method="_on_interact_area_body_exited"]

@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cxe703cy0f4b1"]
+
+[ext_resource type="PackedScene" uid="uid://cbjg7djo286vw" path="res://Lobby.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dn30siwqjurf8" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://b1hhcwcgno214" path="res://player.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://dqsosa34j05qf" path="res://map_container.gd" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dny20xjs416pg" path="res://museum_right.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cu26j1tq6ijmk" path="res://museum_left.tscn" id="6_7mycd"]
+[ext_resource type="AudioStream" uid="uid://dse5vgk028c5a" path="res://assets/audio/door.mp3" id="7_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://1fer4mx2fyxf" path="res://hud.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://ewphn1eddrko" path="res://exhibit_manager.tscn" id="8_kek77"]
+[ext_resource type="Script" uid="uid://dmeaud2yxdj84" path="res://patrol_manager.gd" id="9_kek77"]
+[ext_resource type="AudioStream" uid="uid://bb4et3pk2dc3f" path="res://assets/audio/patrol.mp3" id="10_dg77c"]
+[ext_resource type="AudioStream" uid="uid://clhg3grm2ylsu" path="res://assets/audio/succes.mp3" id="11_ycdy4"]
+[ext_resource type="AudioStream" uid="uid://b4tk4btwjoqpi" path="res://assets/audio/fail.mp3" id="12_w48qg"]
+
+[node name="Main" type="Node2D" unique_id=119530583]
+script = ExtResource("1_h2yge")
+
+[node name="Player" parent="." unique_id=77338733 instance=ExtResource("2_h2yge")]
+position = Vector2(-300, 200)
+scale = Vector2(1.8, 1.8)
+
+[node name="MapContainer" type="Node2D" parent="." unique_id=1817718152 groups=["map_manager"]]
+script = ExtResource("3_lquwl")
+
+[node name="Lobby" parent="MapContainer" unique_id=2028449377 instance=ExtResource("1_0xm2m")]
+
+[node name="museum_right" parent="MapContainer" unique_id=869408075 instance=ExtResource("4_1bvp3")]
+position = Vector2(501.00003, -810)
+
+[node name="museum_left" parent="MapContainer" unique_id=5622962 instance=ExtResource("6_7mycd")]
+position = Vector2(-445, -811)
+
+[node name="DoorOpenSound" type="AudioStreamPlayer" parent="MapContainer" unique_id=5800811]
+stream = ExtResource("7_ycdy4")
+
+[node name="HUD" parent="." unique_id=1696038280 instance=ExtResource("8_5vw27")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=218125609]
+color = Color(0.08, 0.08, 0.08, 1)
+
+[node name="LimitTopLeft" type="Marker2D" parent="." unique_id=542580411]
+position = Vector2(-821, -1187)
+
+[node name="LimitBottomRight" type="Marker2D" parent="." unique_id=1674181952]
+position = Vector2(580, 363)
+
+[node name="ExhibitManager" parent="." unique_id=503072684 instance=ExtResource("8_kek77")]
+spawn_positions = Array[Vector2]([Vector2(725, -1000)])
+
+[node name="PatrolManager" type="Node" parent="." unique_id=263658008]
+script = ExtResource("9_kek77")
+
+[node name="PatrolStartSound" type="AudioStreamPlayer" parent="PatrolManager" unique_id=1945256459]
+stream = ExtResource("10_dg77c")
+
+[node name="PatrolCompleteSound" type="AudioStreamPlayer" parent="PatrolManager" unique_id=1312871492]
+stream = ExtResource("11_ycdy4")
+
+[node name="PatrolFailSound" type="AudioStreamPlayer" parent="PatrolManager" unique_id=1319271511]
+stream = ExtResource("12_w48qg")
