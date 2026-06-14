@@ -16,7 +16,7 @@ Godot Engine으로 제작한 2D 탑다운 박물관 생존 게임입니다.
 - 순찰근무 시스템
 
 ## 실행 방법
-1. Godot Engine 실행
-2. Import 클릭
-3. project.godot 선택
+1. Zip파일 다운로드
+2. 압축 풀기
+3. project 선택
 4. 실행
